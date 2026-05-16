@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import { login }
     from '../services/authService';
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useAuth} from "../context/AuthContext.tsx";
 
 function Login() {
@@ -222,6 +222,33 @@ function Login() {
                     </button>
 
                 </form>
+
+                <p
+                    className="
+    text-slate-400
+    text-center
+    mt-6
+  "
+                >
+
+                    Don't have an account?
+                    {' '}
+
+                    <Link
+
+                        to="/signup"
+
+                        className="
+      text-blue-400
+      hover:underline
+    "
+                    >
+
+                        Sign up
+
+                    </Link>
+
+                </p>
 
             </div>
 

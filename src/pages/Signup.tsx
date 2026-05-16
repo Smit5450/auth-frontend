@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {signup} from "../services/authService.ts";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 function Signup() {
@@ -230,6 +231,33 @@ function Signup() {
                     </button>
 
                 </form>
+
+                <p
+                    className="
+    text-slate-400
+    text-center
+    mt-6
+  "
+                >
+
+                    Already have an account?
+                    {' '}
+
+                    <Link
+
+                        to="/login"
+
+                        className="
+      text-blue-400
+      hover:underline
+    "
+                    >
+
+                        Login
+
+                    </Link>
+
+                </p>
 
             </div>
 
